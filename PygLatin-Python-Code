@@ -1,0 +1,11 @@
+pyg = 'ay'
+original = raw_input('Enter a word:') #enables the input and sets the message.
+if len(original) > 0 and original.isalpha(): #makes sure that empty messages aren't entered, and those that are entered are alphabetic.
+    word = original.lower()
+    first = word[0]
+    new_word = word + first + pyg
+    new_word = new_word[1:len(new_word)] # the actual conversion happens right there.
+if len(original) > 0 and original.isalpha():
+    print new_word # finally printing the thing.
+else:
+    print 'empty'
